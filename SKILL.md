@@ -21,7 +21,7 @@ Read [linguistic principles](references/principles.md) before assessing translat
 ## Workflow
 
 1. Identify the relevant user-visible strings, their complete rendering paths, and translation domains.
-2. Inspect **callers and assembled output**, not only individual gettext calls. Search for identical source strings used with different meanings.
+2. Inspect **callers and assembled output**, not only individual gettext calls. Search for identical source strings used with different meanings; examine sentence boundaries, markup separators, punctuation, and presentation constraints.
 3. Classify findings: genuine linguistic defect; missing or misleading context; technical i18n issue; potential issue requiring more evidence.
 4. Prioritize problems that prevent correct translations. Group repeated instances instead of repeating the same explanation.
 5. In REVIEW, give location, observed code, linguistic reason, illustrative language-specific failure, suggested fix, and any developer decision needed.
@@ -33,6 +33,8 @@ Do not claim a check or test ran unless it actually did. Avoid overconfident uni
 ## Core guardrails
 
 - A gettext wrapper is **not** proof of localizability.
+- Prefer **one complete sentence per translatable string**. Investigate `<br>` or stronger separators as signs of oversized strings; do not split blindly.
+- Check punctuation, capitalization, text expansion, and language-dependent non-gettext content where relevant.
 - Never translate isolated grammatical fragments as a workaround for sentence construction.
 - Use contextual keys only when identical source strings need different translations; use translator comments for explanation.
 - Keep contexts short but sufficient. Avoid needless catalog fragmentation.
