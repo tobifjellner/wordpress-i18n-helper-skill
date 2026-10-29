@@ -14,6 +14,16 @@ Use comments beginning `translators:` immediately before the relevant translatio
 
 Keep complete message templates translatable. Prefer numbered `sprintf()` placeholders when translators may need to reorder variables. Do not interpolate variables into the original string before translation. Escape dynamic values and output according to context. When placeholders contain markup or HTML, evaluate safety and translator flexibility carefully.
 
+## Plurals are count-dependent
+
+Use `_n()` or `_nx()` for forms selected by a **numeric count** and pass the actual number. Do not use plural APIs merely to toggle between two unrelated wordings or generic singular/plural concepts without a count. Different languages have different plural categories; do not hardcode an English two-form assumption.
+
+## Markup and string boundaries
+
+Prefer one complete sentence per translation call. Investigate strings containing `<br>`, paragraph tags, or stronger layout separators: these often contain multiple independently translatable sentences. Do not automatically split on tags or punctuation; confirm grammatical independence. Avoid unnecessarily embedding HTML in translation strings. Where markup is needed, keep complete and valid tag pairs and assess translator control of word order and output safety.
+
+Keep language-dependent punctuation and quotation marks inside the relevant translatable sentence when appropriate. Avoid using CSS `text-transform` to force capitalization of translated text. Check responsive layouts for expansion and RTL behavior.
+
 ## JavaScript
 
 For JavaScript, use the WordPress `@wordpress/i18n` APIs and ensure the script's translation catalog is correctly registered and loaded. Inspect the build pipeline and text domain. Avoid assuming PHP-only translation checks cover JS.
