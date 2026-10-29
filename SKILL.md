@@ -1,6 +1,6 @@
 ---
 name: wordpress-i18n-helper
-description: Review, explain, and improve internationalization in WordPress plugins and themes. Use for audits of translatable strings, gettext context, plurals, grammatical flexibility, translator comments, and safe i18n refactoring.
+description: Review, explain, and improve WordPress plugin and theme internationalization (i18n) and localization (l10n). Use for WordPress plugin reviews, translation-ready code, gettext strings, translation context, plurals, grammatical flexibility, translator comments, and safe i18n refactoring.
 ---
 
 # WordPress i18n helper
