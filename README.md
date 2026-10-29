@@ -39,6 +39,15 @@ This skill builds on Tor-Björn Fjellner's work explaining common linguistic pit
 
 Initial working draft. Examples are illustrative; verify against current WordPress APIs and project-specific requirements. Contributions and test cases are welcome.
 
+## Feedback and contributions
+
+Feedback is very welcome, especially questions, real-world examples of translation difficulties, and suggestions for improving the guidance.
+
+- Use [Discussions](https://github.com/tobifjellner/wordpress-i18n-helper-skill/discussions) to ask questions, share useful examples, or explore ideas.
+- Open an [Issue](https://github.com/tobifjellner/wordpress-i18n-helper-skill/issues) to report a problem, identify missing guidance, or suggest a specific improvement.
+
+When sharing examples, include enough context to explain the linguistic problem and, where possible, what a translator would need to express. Contributions to the repository are also welcome.
+
 ## License
 
 GPL-2.0-or-later. See [LICENSE](LICENSE).
