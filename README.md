@@ -1,6 +1,6 @@
 # WordPress i18n Helper Skill
 
-An open, reusable Agent Skill for reviewing and improving internationalization (i18n) in WordPress plugins and themes.
+An open, reusable Agent Skill for **WordPress plugin and theme developers** and their AI coding assistants to review and improve internationalization (i18n) and localization (l10n).
 
 The goal is **translator-friendly code**, not simply passing mechanical gettext checks. The skill teaches developers *why* a construction can fail in other languages and helps AI coding assistants propose or implement safe corrections.
 
@@ -18,6 +18,14 @@ Example prompts:
 > Review the internationalization of this WordPress plugin. Explain significant linguistic pitfalls with code locations and proposed corrections. Do not edit files.
 
 > Improve i18n in these files. Fix unambiguous issues, but ask before changing product wording, behavior, or public APIs. Report translation-key changes.
+
+## For AI coding assistants
+
+This repository follows the Markdown-based Agent Skills approach. The entry point is [SKILL.md](SKILL.md), with supporting guidance in [references/](references/).
+
+If your coding assistant supports Agent Skills, add this repository's skill directory to the location where that assistant discovers skills, following its installation instructions. If it does not support automatic skill discovery, point the assistant to `SKILL.md` and ask it to read the referenced guidance before reviewing your WordPress code.
+
+Start with **REVIEW** mode to identify and explain issues without editing code. Request **IMPROVE** mode explicitly when you want the assistant to make changes. The skill is community-developed guidance, not an official WordPress tool.
 
 ## Principles
 
