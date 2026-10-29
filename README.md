@@ -45,6 +45,7 @@ Feedback is very welcome, especially questions, real-world examples of translati
 
 - Use [Discussions](https://github.com/tobifjellner/wordpress-i18n-helper-skill/discussions) to ask questions, share useful examples, or explore ideas.
 - Open an [Issue](https://github.com/tobifjellner/wordpress-i18n-helper-skill/issues) to report a problem, identify missing guidance, or suggest a specific improvement.
+- WordPress developers are also encouraged to join the [global WordPress contributor Slack](https://make.wordpress.org/chat/) and reach out in the [#polyglots channel](https://wordpress.slack.com/archives/C02RP50LK) to discuss translation and internationalization questions with the community.
 
 When sharing examples, include enough context to explain the linguistic problem and, where possible, what a translator would need to express. Contributions to the repository are also welcome.
 
